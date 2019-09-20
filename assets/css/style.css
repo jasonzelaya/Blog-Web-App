@@ -77,3 +77,9 @@ header {
 /* Selectors added by jQuery End */
 /* Navbar End */
 /* Header End */
+
+
+/* Testimonials */
+#testimonialsInterval {
+  width: 30%;
+}
