@@ -79,7 +79,11 @@ header {
 /* Header End */
 
 
+.network-expand {
+  padding-right: 80px;
+}
+
 /* Testimonials */
-#testimonialsInterval {
-  width: 30%;
+.testimonials {
+  background: #151f20;
 }
