@@ -13,7 +13,7 @@ The purpose of this project is to create a blog website. Each post will have a p
 * MongoDB
 * MongoDB Atlas
 * Mongoose
-* Robo 3t
+* Robo 3T
 * Heroku
 * Bootstrap 4
 * jQuery
