@@ -1,0 +1,28 @@
+<!-- Compose layout partial -->
+<%- include("partials/header"); -%>
+<%- include("partials/bootstrap_navbar"); -%>
+
+<h1>Compose</h1>
+
+<!-- Send the data to compose.ejs to be processed -->
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <!-- "Title" text box -->
+    <input class="form-control" type="text" name="postTitle">
+    <label>Post</label>
+    <!-- "Post" area for blog content -->
+    <textarea class="form-control" name="postBody" rows="5"></textarea>
+  </div>
+  <!-- Publish Button -->
+  <button class="btn btn-primary btn-lg" type="submit" name="button">Publish</button>
+</form>
+
+
+
+
+
+
+
+<!-- Footer layout partial -->
+<%- include("partials/footer"); -%>

@@ -1,0 +1,17 @@
+<!-- Header layout partial -->
+<%- include("partials/header"); -%>
+<%- include("partials/bootstrap_navbar"); -%>
+
+<!-- New post button -->
+<a class="postBtn btn btn-primary btn-lg" href="/compose" role="button">Add Post</a>
+<!-- The "Title" content from input in compse.ejs -->
+<h1> <%= title %> </h1>
+<!-- The "Post" content from textarea in compose.ejs -->
+<p> <%= content %> </p>
+
+
+
+
+
+<!-- Footer layout partial -->
+<%- include("partials/footer") -%>

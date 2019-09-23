@@ -1,0 +1,27 @@
+<!-- Header layout partial -->
+<%- include("partials/header.ejs"); -%>
+
+<div class="container-fluid p-0">
+  <%- include("partials/bootstrap_navbar"); -%>
+</div>
+
+
+<h1 class="blogTitle"><%= blogTitle %></h1>
+
+<!-- New post button -->
+<a class="postBtn btn btn-primary btn-lg" href="/compose" role="button">Add Post</a>
+
+<!-- Execute a function on each element in posts -->
+<% posts.forEach(function(post) { %>
+  <!-- Render the postTitle value as the title of the journal entry -->
+  <h1><%= post.title %> </h1>
+  <p>
+    <!-- Render the postBody value and truncate the blog post to 100 characters -->
+    <%= post.content.substring(0, 100) + '...'%>
+    <!-- Add link to see the full blog post on a separate page -->
+    <a href="/posts/<%= post._id %>">Read More</a>
+  </p>
+<% }) %>
+
+<!-- Footer layout partial -->
+<%- include("partials/footer.ejs") -%>
