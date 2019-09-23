@@ -3,7 +3,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
-const _ = require("lodash");
 
 const blogTitle = "Welcome to our Blog!"
 const blogContent = 'Click the "Add Post" button to start posting to our blog with others!'
