@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const _ = require("lodash");
 
 const blogTitle = "Welcome to our Blog!"
+const blogContent = 'Click the "Add Post" button to start posting to our blog with others!'
 const aboutContent1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet tellus cras adipiscing enim eu. Venenatis cras sed felis eget velit aliquet sagittis id. Amet mauris commodo quis imperdiet massa tincidunt. Nulla posuere sollicitudin aliquam ultrices sagittis. In dictum non consectetur a erat nam at lectus urna. Elit pellentesque habitant morbi tristique. Diam sollicitudin tempor id eu nisl nunc mi."
 const aboutContent2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id."
 const contactStartingContent = "Lacus vel facilisis volutpat est velit egestas";
@@ -58,6 +59,7 @@ app.get("/blog", function(req, res) {
       // Render all of the documents in the collection on the blog page
       res.render("blog", {
         blogTitle: blogTitle,
+        blogContent: blogContent,
         posts: foundPosts
       });
     }

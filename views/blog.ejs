@@ -2,19 +2,20 @@
 <%- include("partials/header.ejs"); -%>
 
 <div class="container-fluid p-0">
-  <%- include("partials/navbar"); -%>
+  <%- include("partials/bootstrap_navbar"); -%>
 </div>
 
 
-<h1 class="blogTitle"><%= blogTitle %></h1>
-
+<h1 class="blogTitle text-center mt-4"><%= blogTitle %></h1>
+<p class="lead text-center"><%= blogContent %></p>
+<form class="text-center">
 <!-- New post button -->
-<a class="postBtn btn btn-primary btn-lg" href="/compose" role="button">Add Post</a>
-
+<a class="postBtn btn btn-primary btn-lg mb-5" href="/compose" role="button">Add Post</a>
+</form>
 <!-- Execute a function on each element in posts -->
 <% posts.forEach(function(post) { %>
   <!-- Render the postTitle value as the title of the journal entry -->
-  <h1><%= post.title %> </h1>
+  <h2><%= post.title %> </h2>
   <p>
     <!-- Render the postBody value and truncate the blog post to 100 characters -->
     <%= post.content.substring(0, 100) + '...'%>
