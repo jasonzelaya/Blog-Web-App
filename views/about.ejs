@@ -1,12 +1,15 @@
 <!-- Header layout partial -->
 <%- include("partials/header"); -%>
-<%- include("partials/bootstrap_navbar"); -%>
+<%- include("partials/navbar"); -%>
 
 <!-- Page Title -->
-<h1>About</h1>
-<!-- Content value from app.js -->
-<p> <%= aboutContent %> </p>
+<h1 class="aboutHeader display3 text-center mt-5">About Us</h1>
 
+<img class="img-fluid rounded-circle mx-auto mt-4 d-block" src="assets/images/blog.png" width="500">
+<!-- Content value from app.js -->
+<p class="about lead text-center mt-5"> <%= aboutContent1 %> </p>
+
+<p class="about lead text-center"><%= aboutContent2 %></p>
 
 
 
