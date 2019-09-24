@@ -21,5 +21,8 @@ The purpose of this project is to create a blog website. Each post will have a p
 * HTML
 * CSS
 
+#### Details
+The app's blog is fully functional and renders the posts on both the blog page and the dynamic pages. There is still some CSS to finish but other than that the app is good to go.
+
 #### Deployed App
 https://afternoon-ocean-39772.herokuapp.com/
